@@ -4,7 +4,7 @@ A Human-Alien-Messaging Interface, where an alien sends you a message! Very mini
 
 # Demo
 
-- You can (demo here!)[]
+- You can (demo here!)[https://ham-i.vercel.app/]
 
 # The Site:
 

@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #000000, #002e00);
+    background: linear-gradient(135deg, #001100, #003300);
     color: #00ff00;
     font-size: 1vw;
     font-family: 'Orbitron', sans-serif;
@@ -29,10 +29,20 @@ body {
     }
 }
 
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
     text-transform: uppercase;
     text-decoration: underline;
     margin-bottom: 1.4vw;
+}
+
+img {
+    width: 10vw;
+    filter: sepia(1) saturate(6);
 }
 
 #confirmation {
