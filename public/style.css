@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(135deg, #000000, #002e00);
+    color: #00ff00;
+    font-size: 1vw;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 0.2vw solid #00ff00;
+    border-radius: 1vw;
+    padding: 1vw 3vw;
+    animation: pulse 1s infinite;
+    width: 80%;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 20px #00ff00;
+    }
+    100% {
+        box-shadow: 0 0 10px #00ff00;
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 1.4vw;
+}
+
+#confirmation {
+    border: 0.2vw solid #00ff00;
+    border-radius: 1vw;
+    padding: 0vw 1vw 0.7vw 1vw;
+    margin-bottom: 1vw;
+}
+
+button {
+    background-color: transparent;
+    border: 0.1vw #00ff00 solid;
+    border-radius: 1vw;
+    padding: 0.5vw 2vw;
+    color: #00ff00;
+    font-size: 0.8vw;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00ff0027;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#msg, #pls, #check {
+    display: none;
+    border: 0.2vw #00ff00 solid;
+    border-radius: 1vw;
+    padding: 0vw 1vw;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        padding: 2vw 5vw;
+    }
+
+    #buttons {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        font-size: 1.2vw;
+        padding: 1vw 2vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+}
